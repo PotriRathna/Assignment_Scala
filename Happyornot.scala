@@ -11,7 +11,7 @@ object Happyornot extends App{
 
   println("Enter the String : ")
   val string1 = scala.io.StdIn.readLine()
-  println(fact(string1,0))
+  println(s"$string1 is " +fact(string1,0))
   def fact(str:String,c:Int):String=
     {
       val len = string1.length
