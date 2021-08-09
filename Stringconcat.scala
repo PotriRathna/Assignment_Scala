@@ -8,6 +8,12 @@ Expected Output  In, In, In, In  InInInIn
  */
 object Stringconcat extends App {
 
+  
+  println("Enter the String : ")
+  val string1 = scala.io.StdIn.readLine()
+  val len = string1.length
+  println(test(string1,len))
+  
   def test(str : String, l :Int ):String={
   if (l < 2) {
     print(s"string is small($l): ")
@@ -18,8 +24,4 @@ object Stringconcat extends App {
      string2 + string2 + string2 + string2
   }
   }
-  println("Enter the String : ")
-  val string1 = scala.io.StdIn.readLine()
-  val len = string1.length
-  println(test(string1,len))
 }
